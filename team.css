@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* background-image: url(https://wallpapercave.com/wp/wp10775131.jpg); */
+    background-color: rgba(33, 43, 43, 0.877);
+    background-size: 100vw;
+    color: aliceblue
+}
+
+h1 {
+    margin:1em;
+    text-align: center;
+    font-family: monospace;
+    letter-spacing: 0.16rem;
+}
+
+div {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* word-spacing: 0.3rem; */
+}
+.ewoma {
+    margin: 1em 3em 2em 46em;
+    background-color: rgb(33, 43, 43);
+    border-radius: 2em;
+    padding: 1em;
+    max-width: 50%;
+}
+
+.vic {
+    margin: 1em 40em 2em 3em;
+    background-color: rgb(33, 43, 43);
+    border-radius: 2em;
+    padding: 1.5em;
+    max-width: 50%;
+}
+
+#names {
+    text-align: right;
+}
