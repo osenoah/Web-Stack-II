@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(24, 41, 41);
+}
+
+.card {
+    width: 90%;
+    max-width: 90%;
+    background: linear-gradient(135deg, #00feba, #5b548a);
+    color: aliceblue;
+    padding: 2em;
+    border-radius: 3em;
+    margin: 5em auto 0;
+    text-align: center;
+    
+}
