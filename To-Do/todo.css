@@ -5,10 +5,46 @@
 }
 
 body {
-    background: linear-gradient(110deg, #2957adf3, #490079f3 );
+    background: linear-gradient(90deg, #2957adf3, #490079f3 );
+  
 }
 
 .container {
-    float: left;
-    background: darkmagenta;
+    width: 100%;
+    max-width: 55%;
+    background: aliceblue;
+    padding: 2em 1em;
+    border-radius: 2em;
+    margin: 5em auto 0;
+    margin-bottom: 2em;
+    text-align: center;
+}
+
+h1 {
+    text-align: left;
+    font-family: monospace;
+    font-size: 1.9em; 
+}
+
+.add input{
+    margin: 2em -9em 0 1em;
+    border-style: none;
+    border-radius: 2em;
+    background: #b6b9c9a9;
+    padding: 1em;
+    width: 80%;
+    font-family: cursive;
+    font-weight: bold;
+    font-size: 0.78em;
+}
+
+.add button {
+    border-radius: 2em;
+    background-color: #e7722e;
+    border-style: none;
+    padding: 1em;
+    width: 25%;
+    color:aliceblue;
+    font-weight: bolder;
+    margin-left: 2em;
 }
