@@ -25,13 +25,13 @@ if (response.status === 404) {
             wIcon.src = "imgs/drizzle.png";
         break;
         case 'Rain':
-         wIcon.src = "imgs/rain.png";
+        wIcon.src = "imgs/rain.png";
         break;
         case 'Snow':
             wIcon.src = "imgs/snow.png";
         break;
     }
-       
+    
     
 
 console.log(data);
@@ -43,7 +43,7 @@ document.querySelector('.wind').innerHTML = Math.round(data.wind.speed) + "km/h"
 
 }
 }
- 
+
 function sbutton() {
     checkWeather(searchBox.value);
     document.querySelector('.weather').style.display = "block"
