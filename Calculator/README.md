@@ -21,5 +21,3 @@ This project is a simple yet functional calculator with a sleek user interface t
 - **HTML:** Provides the structure of the calculator, including the display and buttons for various operations.
 - **CSS:** Handles the styling of the calculator, including the design for both light and dark modes. CSS media queries are used to ensure the application is responsive.
 - **JavaScript:** Implements the calculator's functionality, including arithmetic operations, display updates, and the light/dark mode toggle feature.
-
-This project serves as a practical demonstration of using HTML, CSS, and JavaScript to build a functional and aesthetically pleasing web application. It can be further extended with additional features such as scientific operations, history tracking, and more advanced UI/UX improvements.
