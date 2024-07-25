@@ -1,8 +1,8 @@
-#Project Description: Calculator with Light and Dark Mode
+# Project Description: Calculator with Light and Dark Mode
 
 This project is a simple yet functional calculator with a sleek user interface that allows users to switch between light and dark modes. The calculator is built using HTML, CSS, and JavaScript, showcasing the use of fundamental web development technologies to create an interactive and responsive application.
 
-##Features:
+## Features:
 
 1. **Basic Arithmetic Operations:**
    - The calculator supports standard arithmetic operations such as addition, subtraction, multiplication, and division.
@@ -16,7 +16,7 @@ This project is a simple yet functional calculator with a sleek user interface t
 4. **Clean and Modern UI:**
    - The user interface is designed with a minimalist approach, providing an intuitive and clutter-free environment for users to perform calculations.
 
-##Technologies Used:
+## Technologies Used:
 
 - **HTML:** Provides the structure of the calculator, including the display and buttons for various operations.
 - **CSS:** Handles the styling of the calculator, including the design for both light and dark modes. CSS media queries are used to ensure the application is responsive.
