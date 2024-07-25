@@ -1,4 +1,4 @@
-# Project Description: Calculator with Light and Dark Mode
+# Calculator with Light and Dark Mode
 
 This project is a simple yet functional calculator with a sleek user interface that allows users to switch between light and dark modes. The calculator is built using HTML, CSS, and JavaScript, showcasing the use of fundamental web development technologies to create an interactive and responsive application.
 
