@@ -47,6 +47,7 @@ h1 {
     color:aliceblue;
     font-weight: bolder;
     margin: 0 0 2em 2em;
+    cursor: pointer;
 }
 
 ul li{
@@ -61,7 +62,7 @@ ul li{
 
 }
 
-.tasks ::before{
+#tasks li::before {
     content: '';
     background-image: url(img/unchecked.png);
     position: absolute;
@@ -73,12 +74,26 @@ ul li{
     bottom: 1.2em;
     left: -1em;
 }
- .checked ::before {
-    background-image: url(img/checked.png)!important;
+#tasks #checked::before {
+    background-image: url(img/checked.png);
 
 }
 
-.tasks .checked {
+#tasks #checked {
     text-decoration: line-through;
     color: #666666;
+}
+
+ul li span {
+    position: absolute;
+    right: 0;
+    width: 1em;
+    height: 1em;
+    top: 10px;
+    font-size: 1.4em;
+    color: darkslategrey;
+    text-align: center;
+    line-height: 40px;
+    
+
 }

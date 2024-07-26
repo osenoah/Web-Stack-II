@@ -10,14 +10,13 @@
     <div class="container">
         <h1>To-Do List 📝</h1>
         <div class="add">
-            <input type="text" placeholder="Add your task" maxlength="40">
-                <button>Add</button>
-            </input>
+            <input type="text" placeholder="Add your task" maxlength="40" id="input-box">
+            <button onclick="addTask()">Add</button>
         </div>
-        <ul class="tasks">
-            <li class="checked">Task 1</li>
+        <ul id="tasks">
+            <!-- <li id="checked">Task 1</li>
             <li>Task 2</li>
-            <li>Task 3</li>
+            <li>Task 3</li> -->
         </ul>
     </div>
     <script src="todo.js"></script>
