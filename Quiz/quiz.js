@@ -227,10 +227,10 @@ var questions = [
     {
         question: "Who was the Roman governor who sentenced Jesus to be crucified?" ,
         answers: [
-            {text: "Pilate", correct: true},
-            {text: "Caesar", correct: false},
-            {text: "Herod", correct: false},
-            {text: "Pilus", correct: false},
+            { text: "Pilate", correct: true},
+            { text: "Caesar", correct: false},
+            { text: "Herod", correct: false},
+            { text: "Pilus", correct: false},
         ]
     },
     {
@@ -318,9 +318,9 @@ var questions = [
         question: "Which book describes the early church and the spread of the gospel?" ,
         answers: [
             {text: "Acts", correct: true},
-            {text: "Matthew", correct: false},
-            {text: "Mark", correct: false},
-            {text: "Luke", correct: false},
+            {text: "Corinthians", correct: false},
+            {text: "Romans", correct: false},
+            {text: "Galatians", correct: false},
         ]
     },
     {
@@ -358,6 +358,88 @@ var questions = [
             {text: "James", correct: false},
             {text: "Paul", correct: false},
         ]
-    },
+    }
 
-]
+];
+
+var questionElement = document.getElementById("question");
+var answerButtons = document.getElementById("options")
+var nextBtn = document.getElementById("nextQ")
+
+let currentQuestionIndex = 0;
+let score = 0;
+
+function startQuiz(){
+    currentQuestionIndex = 0;
+    score = 0;
+    nextBtn.innerHTML = "Next";
+    showQuestion();
+}
+
+function showQuestion() {
+    resetState();
+    let currentQuestion = questions[currentQuestionIndex];
+    let questionNo = currentQuestionIndex + 1;
+    questionElement.innerHTML = questionNo + ". " + currentQuestion.question;
+
+    currentQuestion.answers.forEach(answer => {
+        const button = document.createElement("button");
+        button.innerHTML = answer.text;
+        button.classList.add("btn");
+        answerButtons.appendChild(button);
+        if (answer.correct) {
+            button.dataset.correct = answer.correct;
+        }
+        button.addEventListener("click", selectAnswer);
+    })
+}
+
+function resetState(){
+    nextBtn.style.display = "none";
+    while(answerButtons.firstChild){
+        answerButtons.removeChild(answerButtons.firstChild);
+    }
+}
+
+function selectAnswer(e) {
+    const selectedBtn = e.target;
+    const isCorrect = selectedBtn.dataset.correct === "true";
+    if (isCorrect) {
+        selectedBtn.classList.add("correct");
+        score++;
+    } else {
+        selectedBtn.classList.add("incorrect")
+    }
+    Array.from(answerButtons.children).forEach(button => {
+        if(button.dataset.correct === "true"){
+            button.classList.add("correct");
+        }
+        button.disabled = true;
+    });
+    nextBtn.style.display = "block";
+}
+
+function showScore() {
+    resetState();
+    questionElement.innerHTML = `You scored ${score} out of ${questions.length}!`
+    nextBtn.innerHTML = "Take Quiz Again";
+    nextBtn.style.display = "block"
+}
+
+function handleNextButton() {
+    currentQuestionIndex++;
+    if (currentQuestionIndex < questions.length){
+        showQuestion();
+    } else {
+        showScore();
+    }
+}
+
+nextBtn.addEventListener("click", ()=> {
+    if(currentQuestionIndex < questions.length) {
+        handleNextButton();
+    }else{
+        startQuiz();
+    }
+})
+startQuiz();

@@ -52,9 +52,12 @@ h2 {
     cursor: pointer;
 }
 
-.btn:hover{
+.btn:hover:not([disabled]){
     background: darkslategrey;
     color: aliceblue;
+}
+.btn:disabled {
+    cursor: no-drop;
 }
 
 #nextQ {
@@ -68,4 +71,11 @@ h2 {
     cursor: pointer;
     display: none;
 
+}
+
+.correct {
+    background: #9aeabc;
+}
+.incorrect {
+    background: #ff9393
 }
