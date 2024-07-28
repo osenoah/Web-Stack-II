@@ -369,6 +369,15 @@ var questions = [
         ]
     },
     {
+        question: "What were the occupations of the first disciples of Christ?" ,
+        answers: [
+            {text: "Accountants", correct: false},
+            {text: "Sailers", correct: false},
+            {text: "Pirates", correct: false},
+            {text: "Fishermen", correct: true},
+        ]
+    },
+    {
         question: "Which prophet confronted the prophets of Baal on Mount Carmel?" ,
         answers: [
             {text: "Jeremiah", correct: false},
