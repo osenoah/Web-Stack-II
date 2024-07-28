@@ -36,6 +36,15 @@ var questions = [
         ]
     },
     {
+        question: "According to John, who is the true vine?" ,
+        answers: [
+            {text: "Jesus", correct: true},
+            {text: "Joseph", correct: false},
+            {text: "Joshua", correct: false},
+            {text: "GOD", correct: false},
+        ]
+    },
+    {
         question: "What did God create on the first day?" ,
         answers: [
             {text: "Stars", correct: false},
@@ -72,6 +81,15 @@ var questions = [
         ]
     },
     {
+        question: "How many sons did Noah birth?" ,
+        answers: [
+            {text: "4", correct: false},
+            {text: "3", correct: true},
+            {text: "5", correct: false},
+            {text: "2", correct: false},
+        ]
+    },
+    {
         question: "In the Book of Daniel, what were the names of Daniel's three friends?" ,
         answers: [
             {text: "Shadrach, Moses, and Abednego", correct: false},
@@ -105,6 +123,15 @@ var questions = [
             {text: "Isaiah", correct: false},
             {text: "Elijah", correct: true},
             {text: "Jeremiah", correct: false},
+        ]
+    },
+    {
+        question: "What are the names of Noah’s sons?" ,
+        answers: [
+            {text: "Enoch, Ham, Lamech, Shem", correct: false},
+            {text: "Ham, Japheth, Shem", correct: false},
+            {text: "Lamech, Japheth, Ham", correct: true},
+            {text: "Noel, Noah the II, Lamech, Ham", correct: false},
         ]
     },
     {
