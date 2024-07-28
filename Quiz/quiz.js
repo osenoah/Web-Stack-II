@@ -9,6 +9,15 @@ var questions = [
         ]
     },
     {
+        question: "Which personality from the Bible came from Uz?" ,
+        answers: [
+            {text: "Cain", correct: false},
+            {text: "Job", correct: true},
+            {text: "Samuel", correct: false},
+            {text: "Noah", correct: false},
+        ]
+    },
+    {
         question: "Which book of the Bible contains the story of Noah and the Ark?" ,
         answers: [
             {text: "Exodus", correct: false},
