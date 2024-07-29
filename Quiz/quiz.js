@@ -129,8 +129,8 @@ var questions = [
         question: "What are the names of Noah’s sons?" ,
         answers: [
             {text: "Enoch, Ham, Lamech, Shem", correct: false},
-            {text: "Ham, Japheth, Shem", correct: false},
-            {text: "Lamech, Japheth, Ham", correct: true},
+            {text: "Ham, Japheth, Shem", correct: true},
+            {text: "Lamech, Japheth, Ham", correct: false},
             {text: "Noel, Noah the II, Lamech, Ham", correct: false},
         ]
     },
