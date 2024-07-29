@@ -90,6 +90,24 @@ var questions = [
         ]
     },
     {
+        question: "Hachaliah was whose son?" ,
+        answers: [
+            {text: "Nehemiah", correct: true},
+            {text: "Reuben", correct: false},
+            {text: "Adaiah", correct: false},
+            {text: "Malluch", correct: false},
+        ]
+    },
+      {
+        question: "Terah lived for …… years." ,
+        answers: [
+            {text: "110", correct: false},
+            {text: "73", correct: false},
+            {text: "50", correct: false},
+            {text: "70", correct: true},
+        ]
+    },
+    {
         question: "In the Book of Daniel, what were the names of Daniel's three friends?" ,
         answers: [
             {text: "Shadrach, Moses, and Abednego", correct: false},
