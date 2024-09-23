@@ -3,7 +3,6 @@ const url = require('url');
 const fs = require('fs');
 
 // const quakers = './index.html'
-// const err = './404.html'
 // const about = './about.html'
 // const contact = './contact-me.html'
 
@@ -12,8 +11,16 @@ const Quaker = http.createServer ( function (req,res) {
     const p = "." + q.pathname
     fs.readFile(p, 'utf8', function (error, data){
         if (error) {
-            res.writeHead(404, {'Content-Type': 'text/html'});
-            return res.end("404 Not Found");
+            fs.readFile('./404.html', 'utf8', function (err404, data404) {
+                if (err404) {
+                    res.writeHead(404, {'Content-Type': 'text/html'})
+                    res.write('404 - fILE NOT fOUND')
+                } else {
+                    res.writeHead(404, {'Content-Type': 'text/html'})
+                    res.write(data404)
+                    return res.end()
+                }
+            })
         }
         else {
             res.writeHead(200, {'Content-Type': 'text/html'})
