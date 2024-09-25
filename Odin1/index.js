@@ -32,4 +32,4 @@ const Quaker = http.createServer(function (req, res) {
     });
 });
    
-Quakers.listen(8080, () => console.log(`Service running at http://localhost:8080`));
+Quaker.listen(8080, () => console.log(`Service running at http://localhost:8080`));
