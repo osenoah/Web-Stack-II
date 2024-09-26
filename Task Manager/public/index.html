@@ -3,22 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Task Manager</title>
+    <title>Task Manager📃</title>
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Task Manager📃</h1>
-        <div class="add">
-            <input type="text" placeholder="add your task" maxlength="40" id="input-box">
-            <button onclick="addTask()">Add</button>
+    <form class="task-form">
+        <h4>Task Manager📃</h4>
+        <div class="form-control">
+          <input
+            type="text"
+            name="name"
+            class="task-input"
+            placeholder="add your task"
+          />
+          <button type="submit" class="btn submit-btn">Submit</button>
         </div>
-    </div>
-    <div><ul class="tasks"></ul>
-            <li id="checked">Task 1</li>
-            <li>Task 2</li>
-            <li>Task 3</li>
-        </ul>
-    </div>
+        <div class="form-alert"></div>
+      </form>
+      <section class="tasks-container">
+        <p class="loading-text">Loading...</p>
+        <div class="tasks"></div>
+      </section>
+      <!-- axios -->
+      <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
+        integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+      ></script>
+      <script src="./browser-app.js"></script>
 </body>
 </html>

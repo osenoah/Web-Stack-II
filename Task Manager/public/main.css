@@ -9,12 +9,12 @@ body {
     background: hwb(180 9% 84%);
 }
 
-.container{
-    margin: 8em;
-    background-color: aliceblue;
+.task-form{
+    margin: 3em 4em 4em 4em;
+    background-color:aliceblue;
     border-radius: 2em;
     padding: 1em;
-    font-size: 1em;
+    font-size: 1.5em;
     max-width: 50%;
     align-content: center;
 }
@@ -24,7 +24,7 @@ h1 {
     font-size: 1.9em; 
 }
 
-.add input{
+.form-control .task-input{
     margin: 3em -7em 2em 1em;
     border-style: none;
     border-radius: 2em;
@@ -32,14 +32,14 @@ h1 {
     padding: 1em;
     width: 80%;
     font-weight: bold;
-    font-size: 0.78em;
+    font-size: 0.57em;
 }
 
-.add button {
+button {
     border-radius: 2em;
     background-color: #564e75;
     border-style: none;
-    padding: 1em;
+    padding: 1.1em;
     width: 25%;
     color:aliceblue;
     font-weight: bolder;
