@@ -3,7 +3,8 @@ const loadingDOM = document.querySelector('.loading-text')
 const formDOM = document.querySelector('.task-form')
 const taskInputDOM = document.querySelector('.task-input')
 const formAlertDOM = document.querySelector('.form-alert')
-// Load tasks from /api/tasks
+
+
 const showTasks = async () => {
   loadingDOM.style.visibility = 'visible'
   try {
@@ -39,14 +40,14 @@ const showTasks = async () => {
     tasksDOM.innerHTML = allTasks
   } catch (error) {
     tasksDOM.innerHTML =
-      '<h5 class="empty-list">There was an error, please try later....</h5>'
+      '<h5 class="empty-list">There was an error, please try again!</h5>'
   }
   loadingDOM.style.visibility = 'hidden'
 }
 
 showTasks()
 
-// delete task /api/tasks/:id
+
 
 tasksDOM.addEventListener('click', async (e) => {
   const el = e.target
@@ -63,7 +64,7 @@ tasksDOM.addEventListener('click', async (e) => {
   loadingDOM.style.visibility = 'hidden'
 })
 
-// form
+
 
 formDOM.addEventListener('submit', async (e) => {
   e.preventDefault()
