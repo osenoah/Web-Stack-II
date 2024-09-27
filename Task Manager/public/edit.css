@@ -54,4 +54,6 @@ body {
     font-size: 0.5em;
     border: none;
     margin-left: 4em;
+    max-width: 50%;
+    padding: 0.8em;
 }
