@@ -14,6 +14,10 @@ app.get('/hello', (req,res)=>{
 })
 
 app.use('/api/v1/tasks', tasks);
+// app.use('/api/v1/tasks', tasks);
+// app.use('/api/v1/tasks/:id', tasks);
+// app.use('/api/v1/tasks', tasks);
+// app.use('/api/v1/tasks', tasks);
 
 
 const port = 3000;
