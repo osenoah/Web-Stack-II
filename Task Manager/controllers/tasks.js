@@ -2,7 +2,7 @@
 
 
 const getAllTasks = (req,res) => {
-    res.send('all items')
+    res.send('Bunny Hopping')
 }
 
 module.exports = { getAllTasks }
