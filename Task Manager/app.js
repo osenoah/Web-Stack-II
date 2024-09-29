@@ -1,8 +1,8 @@
+require('./db/connect')
 const express = require('express')
 const tasks = require('./routers/tasks')
 const app = express();
-
-
+const dotenv = require('dotenv')
 //mw
 app.use(express.json())
 
