@@ -1,7 +1,10 @@
 const mongoose = require('mongoose')
-const dotenv = require('dotenv')
-const connectionString = (process.env.MONGOLAB_URI)
 
-dotenv.config(connectionString)
+require('dotenv').config()
 
-mongoose.connect(connectionString).then(()=>console.log('Connected with Db')).catch((err) => console.log(err))
+const mongoConnect = process.env.MONGOLAB_URI
+
+
+mongoose.connect(mongoConnect)
+.then(() => console.log('Connected with Db'))
+.catch((err) => console.log(err))
