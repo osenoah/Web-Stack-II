@@ -3,6 +3,7 @@ const tasks = require('./routers/tasks')
 const app = express();
 const dotenv = require('dotenv')
 const connectDB = require('./db/connect')
+require('dotenv').config()
 //mw
 app.use(express.json());
 
@@ -24,7 +25,7 @@ const port = 3000;
 
 const start = async () =>{
     try{
-        await connectDB()
+        await connectDB(process.env.MONGOLAB_URI)
         app.listen(port, console.log(`Server is running on ${port}....`))
     }catch(err){
         console.log(err)
