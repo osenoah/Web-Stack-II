@@ -8,9 +8,10 @@ input{
     padding: 0.8em;
     margin: 0.5em;
 }
-h1 .min {
-    font-size: 2em;
+h1 {
+    font-size: 3em;
     font-family: monospace;
+    margin: 1em;
 }
 h2 {
     font-size: 2.6em;
