@@ -4,9 +4,9 @@
 </head>
 <body>
   <h2>Message Details</h2>
-  <p>User: <%= message.user %></p>
-  <p>Message: <%= message.text %></p>
-  <p>Added: <%= message.date %></p>
+  <p><b>User: </b> <%= message.user %></p>
+  <p><b>Message: </b> <%= message.text %></p>
+  <p><b>Added: </b> <%= message.added.toLocaleString() %></p>
   <a href="/">Back to Messages</a>
 </body>
 </html>
