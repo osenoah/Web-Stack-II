@@ -4,14 +4,15 @@
         <link rel="stylesheet" href="./main.css">
     </head>
 <body>
+  <h1 class="mini">Mini Message App</h1>
   <a href="/new">New Message</a>
-  <ul>
+  <ul class="msg">
     <% for (let i = 0; i < messages.length; i++) { %>
       <li>
        <p><%= messages[i].text %></p>
-       <p><%= messages[i].user %></p>
+       <p><b><%= messages[i].user %></b></p>
        <p><%= messages[i].added.toLocaleString() %></p>
-       <a href="/message/<%= i %>">Open</a>
+       <a class="open" href="/message/<%= i %>">Open</a>
       </li>
     <% } %>
   </ul>

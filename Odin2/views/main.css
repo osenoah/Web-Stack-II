@@ -1,5 +1,6 @@
 body{
-    background-color: firebrick;
+    background-color: rgb(130, 91, 59);
+    color:bisque;
 }
 
 input{
@@ -7,15 +8,38 @@ input{
     padding: 0.8em;
     margin: 0.5em;
 }
+h1 .mini {
+    font-size: 2em;
+    font-family: monospace;
+    color: aliceblue
+}
 
-button{
-    border-radius: 2em;
-    background-color: #7f726b;
-    border-style: none;
-    padding: 1em;
-    width: 25%;
-    color:aliceblue;
-    font-weight: bolder;
-    margin: 0 0 2em 2em;
-    cursor: pointer;
+.msg{
+    margin-top: 2em;
+}
+
+li {
+    margin: 2em;
+    padding: 2em;
+    border:rgb(90, 44, 21);
+    border-style: solid;
+    border-radius: 1em;
+    max-width: 60%;
+    list-style: none;
+}
+
+
+a{
+    color:rgb(255, 255, 255);
+    font-size: 1.5m;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+li .open{
+    float: right;
+}
+
+li .open :hover{
+    color:black
 }
