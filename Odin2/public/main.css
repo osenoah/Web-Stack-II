@@ -15,6 +15,7 @@ h1 .min {
 h2 {
     font-size: 2.6em;
     font-family: monospace;
+    margin: 2em;
 }
 
 form{
@@ -53,7 +54,7 @@ a:hover {
 }
 
 input, textarea{
-    background-color: burlywood;
+    background-color: rgba(222, 184, 135, 0.691);
     color: #462210;
     border-radius: 5px;
     font-size: 16px; 
@@ -84,3 +85,35 @@ input.submit:hover{
     color: #462210;
     cursor: pointer;
 } 
+
+.msgDeT{
+    margin: 2em;
+    padding: 2em;
+    border:rgb(90, 44, 21);
+    border-style: solid;
+    border-radius: 1em;
+    max-width: 60%;
+    font-size: 20px;
+}
+
+.btm{
+    padding: 0.5em;
+    background-color: #462210;
+    color: burlywood;
+    font-size: 15px;
+    border: none;
+    float: right;
+    border-radius: 5px;
+    margin-right: -2em;
+
+}
+
+input::placeholder, textarea::placeholder{
+    color:rgb(82, 54, 54)
+}
+
+.btm:hover{
+    background-color: burlywood;
+    color: #462210;
+    cursor: pointer;
+}

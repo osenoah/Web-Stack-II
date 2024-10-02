@@ -3,7 +3,7 @@ const app = express();
 const path = require('path')
 const iRouter = require('./routes/index')
 const nRouter = require('./routes/new')
-const css = path.join(__dirname, "views")
+const css = path.join(__dirname, "public")
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(css))
