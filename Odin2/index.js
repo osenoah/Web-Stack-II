@@ -1,24 +1,18 @@
 const express = require('express');
-const path = require('path')
-const ejs = require('ejs')
-
 const app = express();
+const path = require('path')
+const iRouter = require('./routes/index')
+const nRouter = require('./routes/new')
+const css = path.join(__dirname, "views")
 
-const messages = [
-    {
-        text: "Hi there!",
-        user: 'Ose',
-        added: new Date.now()
-    },
-    {
-        text: "Hi there!",
-        user: 'DebZ',
-        added: new Date.now()
-    }
-];
+app.use(express.urlencoded({ extended: true }));
+app.use(express.static(css))
 
+app.set("views", path.join(__dirname, "views"));
+app.set("view engine", "ejs");
 
-
+app.use('/', iRouter)
+app.use('/new', nRouter)
 
 const port = 8080;
 const postLink = `http://localhost:${port}`

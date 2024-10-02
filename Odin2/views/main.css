@@ -1,0 +1,21 @@
+body{
+    background-color: firebrick;
+}
+
+input{
+    border: none;
+    padding: 0.8em;
+    margin: 0.5em;
+}
+
+button{
+    border-radius: 2em;
+    background-color: #7f726b;
+    border-style: none;
+    padding: 1em;
+    width: 25%;
+    color:aliceblue;
+    font-weight: bolder;
+    margin: 0 0 2em 2em;
+    cursor: pointer;
+}

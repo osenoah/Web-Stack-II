@@ -1,9 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    
-</head>
+    <head>
+        <link rel="stylesheet" href="./main.css">
+    </head>
 <body>
-    
+  <a href="/new">New Message</a>
+  <ul>
+    <% for (let i = 0; i < messages.length; i++) { %>
+      <li>
+       <p><%= messages[i].text %></p>
+       <p><%= messages[i].user %></p>
+       <p><%= messages[i].date %></p>
+       <a href="/message/<%= i %>">Open</a>
+      </li>
+    <% } %>
+  </ul>
 </body>
 </html>
